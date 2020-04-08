@@ -15,9 +15,9 @@
   window.loadWatsonAssistantChat({
     integrationID: "972029e6-91e9-4e7d-b059-a0e2f6feb87b", // The ID of this integration.
     region: "eu-gb" // The region your integration is hosted in.
+  }).then(function(instance){
     instance.updateLocale('pt')
     instance.updateLanguagePack('https://nuno-santos-felix.github.io/catia/pt-pt-at.json')
-  }).then(function(instance){
     instance.render();
   });
 </script>
