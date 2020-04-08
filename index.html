@@ -18,6 +18,8 @@ const options = {
 };
 window.loadWatsonAssistantChat(options).then(function(instance) {
   // The instance returned here as many methods on it we will document on this page.
+  instance.updateLocale('pt')
+  instance.updateLanguagePack('https://nuno-santos-felix.github.io/catia/pt-pt-at.json')
   instance.render();
 });
 </script>
