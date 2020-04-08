@@ -18,6 +18,12 @@
   }).then(function(instance){
     instance.render();
   });
+instance.updateLocale('pt').then(function() {
+  instance.render();
+});
+  instance.updateLanguagePack('https://nuno-santos-felix.github.io/catia/pt-pt-at.json').then(function() {
+  instance.render();
+});  
 </script>
 
 <script>
