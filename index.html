@@ -11,16 +11,17 @@
 </iframe>
 
 <script src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js"></script>
-<script>
-  window.loadWatsonAssistantChat({
-    integrationID: "972029e6-91e9-4e7d-b059-a0e2f6feb87b", // The ID of this integration.
-    region: "eu-gb" // The region your integration is hosted in.
-  }).then(function(instance){
-    instance.updateLocale('pt')
-    instance.updateLanguagePack('https://nuno-santos-felix.github.io/catia/pt-pt-at.json')
-    instance.render();
-  });
+<script>;
+const options = {
+  integrationID: "972029e6-91e9-4e7d-b059-a0e2f6feb87b", 
+  region: "eu-gb"
+};
+window.loadWatsonAssistantChat(options).then(function(instance) {
+  // The instance returned here as many methods on it we will document on this page.
+  instance.render();
+});
 </script>
+
 
 <script>
 (function(w,t,c,p,s,e){
