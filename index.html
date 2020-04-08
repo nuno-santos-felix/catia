@@ -16,9 +16,7 @@ const options = {
   integrationID: "972029e6-91e9-4e7d-b059-a0e2f6feb87b", 
   region: "eu-gb"
 };
-window.loadWatsonAssistantChat(options).then(function(instance) {
-  // The instance returned here as many methods on it we will document on this page.
-  const linguagemPTAT = {
+const linguagemPTAT = {
  "errors_generic": "Estamos a ter alguns problemas técnicos. Refresque a página no seu navegador para tentar novamente.",
   "errors_communicating": "Ocorreu um erro ao comunicar com {botName}.",
   "errors_imageSource": "A imagem não está disponível.",
@@ -86,9 +84,8 @@ window.loadWatsonAssistantChat(options).then(function(instance) {
   "alternateResponses_opened": "A painel de mais opções foi aberto",
   "alternateResponses_closed": "O painel de mais opções foi fechado"
 };
-    
-    
-  instance.updateLocale('pt');
+window.loadWatsonAssistantChat(options).then(function(instance) {
+  // The instance returned here as many methods on it we will document on this page. 
   instance.updateLanguagePack(linguagemPTAT);
   instance.render();
 });
