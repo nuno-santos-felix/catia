@@ -22,6 +22,9 @@ window.loadWatsonAssistantChat(options).then(function(instance) {
   instance.updateLanguagePack('https://nuno-santos-felix.github.io/catia/pt-pt-at.json');
   instance.render();
 });
+ instance.updateLanguagePack('https://nuno-santos-felix.github.io/catia/pt-pt-at.json').then(function() {
+  instance.render();
+});
 </script>
 
 
