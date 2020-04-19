@@ -1,0 +1,354 @@
+<html lang="pt-PT" style="" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="author" content="Autoridade Tributária e Aduaneira [https://www.portaldasfinancas.gov.pt/at/html/index.html]">
+        <meta name="description" content="Autoridade Tributária e Aduaneira">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Portal das Finanças</title>
+
+		<!-- ICONS -->
+		<link rel="icon" href="favicon.ico">
+
+		<!-- FONTS -->
+		<!--
+		<link href='http://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,700' rel='stylesheet' type='text/css'>
+		-->
+
+		<!-- MAIN CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+		<!--[if lt IE 9]>
+
+		<![endif]-->
+
+		<!-- MAIN SCRIPTS -->
+		<script src="assets/js/lib/modernizr.min.js"></script>
+
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="assets/js/lib/respond.min.js"></script>
+		<![endif]-->
+
+		<!-- OpenSearch -->
+		<link rel="search" type="application/opensearchdescription+xml" href="https://static.portaldasfinancas.gov.pt/app/pfstatic_static/opensearch/osd.xml" title="Portal das Finanças">
+
+		<!-- JSON-LD - Indexacao Google https://developers.google.com/structured-data/slsb-overview -->
+		<script type="application/ld+json">
+		{
+		  "@context": "http://schema.org",
+		  "@type": "WebSite",
+		  "url": "https://www.portaldasfinancas.gov.pt/",
+		  "potentialAction": {
+			"@type": "SearchAction",
+			"target": "https://sitfiscal.portaldasfinancas.gov.pt/geral/search?query={search_term_string}",
+			"query-input": "required name=search_term_string"
+		  }
+		}
+		</script>
+
+	</head>
+	<body><!-- MAIN HEADER -->
+		<div class="page-wrap">
+			<header role="banner" class="main-header">
+				<!-- MAIN HEADER HEAD -->
+				<!-- User related links -->
+				<div class="main-header-head">
+					<div class="container-wrapper">
+						<div class="hidden-xs col-sm-5">
+							<div id="date" class="date">Domingo, 19 de abril de 2020
+                                <noscript></noscript>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-7">
+							<ul class="login">
+								<li>
+									<a href="https://www.acesso.gov.pt/unauthed/novoUtilizadorForm?partID=PFAP&amp;path=/geral/dashboard" class="btn-outline" style="text-transform: none;">Registar-se</a>
+								</li>
+								<li>
+									<a href="https://sitfiscal.portaldasfinancas.gov.pt/geral/dashboard" class="btn-default">Iniciar Sessão</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- MAIN HEADER -->
+				<div class="main-header-body">
+					<div class="container-wrapper">
+						<div class="col-xs-3">
+							<h1 class="logo">
+								<!--[if gte IE 9]><!-->
+								<img src="assets/images/logo-at.png" alt="Autoridade Tributária e Aduaneira">
+								<!--<![endif]-->
+								<!--[if lt IE 9]>
+								<img class="logo" src="assets/images/logo-at.png" alt="Autoridade Tributária e Aduaneira"/>
+								<![endif]-->
+							</h1>
+						</div>
+						<a class="burger-menu" href="#abrir-menu" title="Abrir menu">Menu</a>
+						<div class="col-xs-12 col-sm-9 no-pad">
+							<nav class="main-nav">
+								<ul id="menus"><li>
+<div class="menu-item-container">
+<a href="https://sitfiscal.portaldasfinancas.gov.pt/geral/home?segmento=CD" alt="Cidadãos" title="Cidadãos" class="">Cidadãos</a>
+</div>
+</li><li>
+<div class="menu-item-container">
+<a href="#" alt="Negócios" title="Negócios" class="submenu1">Negócios</a>
+</div>
+</li><li>
+<div class="menu-item-container">
+<a href="#" alt="Outras Entidades" title="Outras Entidades" class="submenu2">Outras Entidades</a>
+</div>
+</li><li>
+<div class="menu-item-container">
+<a href="#" alt="Informação" title="Informação" class="submenu3">Informação</a>
+</div>
+</li>
+</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="submenu-container" id="submenus"><ul class="submenu" id="submenu1">
+<li>
+<a href="https://sitfiscal.portaldasfinancas.gov.pt/geral/home?segmento=ES" alt="Empresas" title="Empresas" class="toggle">Empresas</a>
+</li>
+<li>
+<a href="https://sitfiscal.portaldasfinancas.gov.pt/geral/home?segmento=OP" alt="Operadores Económicos" title="Operadores Económicos" class="toggle">Operadores Económicos</a>
+</li>
+</ul><ul class="submenu" id="submenu2">
+<li>
+<a href="https://sitfiscal.portaldasfinancas.gov.pt/geral/home?segmento=EP" alt="Entidades Públicas" title="Entidades Públicas" class="toggle">Entidades Públicas</a>
+</li>
+<li>
+<a href="https://sitfiscal.portaldasfinancas.gov.pt/geral/home?segmento=TC" alt="Contabilistas Certificados" title="Contabilistas Certificados" class="toggle">Contabilistas Certificados</a>
+</li>
+<li>
+<a href="https://sitfiscal.portaldasfinancas.gov.pt/geral/home?segmento=OE" alt="Outros Profissionais" title="Outros Profissionais" class="toggle">Outros Profissionais</a>
+</li>
+</ul><ul class="submenu" id="submenu3">
+<li>
+<a href="https://info.portaldasfinancas.gov.pt/pt/Pages/homepage.aspx" alt="Institucional" title="Institucional" class="toggle">Institucional</a>
+</li>
+<li>
+<a href="https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/" alt="Apoio" title="Apoio" class="toggle">Apoio</a>
+</li>
+<li>
+<a href="https://info.portaldasfinancas.gov.pt/pt/home/" alt="Fiscal e Aduaneira" title="Fiscal e Aduaneira" class="toggle">Fiscal e Aduaneira</a>
+</li>
+</ul>
+</div>
+				</div>
+			</header>
+			<!-- END MAIN HEADER -->
+
+			<!-- MAIN -->
+			<main role="main">
+				<div class="container-fluid no-pad">
+					<div class="header relative">
+						<div id="imgLandingPage" class="header-img header-secondary-background-4" style="max-height:150px;">
+						</div>
+                        <noscript>
+                            <div class="header-img header-secondary-background-1">
+                            </div>
+                        </noscript>
+						<div class="container-wrapper content">
+							<form action="https://sitfiscal.portaldasfinancas.gov.pt/geral/search" method="get">
+								<input type="search" name="query" id="query" placeholder="Indique o que pretende... (Ex.: Entregar IRS)">
+								<input type="hidden" name="appName" value="pfapp">
+								<input type="submit" aria-label="Pesquisar" value="Pesquisar" onclick="return inputEmpty()">
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="container-wrapper clearfix relative">
+					<div class="main-content" id="infos"><div class="middle clearfix">
+<div class="col-xs-12 no-pad">
+<ul class="clearfix">
+<li>
+<div class="col-xs-12 col-sm-4">
+<div class="item-primary">
+<figure style="background-image: url(static/item-1.jpg);">
+<img src="static/item-1.jpg" alt="APOIO AO CONTRIBUINTE"></figure>
+<div class="item-primary-content">
+<a href="https://www.portaldasfinancas.gov.pt/pt/formularioContacto.action">
+<h3>APOIO AO CONTRIBUINTE</h3>
+</a><a href="https://www.portaldasfinancas.gov.pt/pt/formularioContacto.action">
+<h4>Atendimento através do telefone e do portal</h4>
+</a>
+<p>
+				
+				Esclareça as suas dúvidas sobre as obrigações tributárias e aduaneiras, sem deslocações presenciais, através de:<br><br>
+				Centro de Atendimento Telefónico: 217 206 707<br>
+				E-balcão do Portal das Finanças<br>
+				<br><br><br>
+				
+			</p>
+<a href="https://www.portaldasfinancas.gov.pt/pt/formularioContacto.action" class="btn-primary">Aceder</a>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="col-xs-12 col-sm-4">
+<div class="item-primary">
+<figure style="background-image: url(static/item-2.jpg);">
+<img src="static/item-2.jpg" alt="IRS"></figure>
+<div class="item-primary-content">
+<a href="https://irs.portaldasfinancas.gov.pt/home.action">
+<h3>IRS</h3>
+</a><a href="https://irs.portaldasfinancas.gov.pt/home.action">
+<h4>IRS Automático e Declaração de IRS - 2019</h4>
+</a>
+<p>
+				<br><br>
+				Até 30 de junho - tem 3 meses - confirme a declaração automática, ou entregue a declaração modelo 3.
+				<br><br>Fique em casa, proteja-se.<br><br><br>
+				
+			</p>
+<a href="https://irs.portaldasfinancas.gov.pt/home.action" class="btn-primary">Aceder</a>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="col-xs-12 col-sm-4">
+<div class="item-primary">
+<figure style="background-image: url(static/item-2.jpg);">
+<img src="static/item-2.jpg" alt="PAGAMENTOS"></figure>
+<div class="item-primary-content">
+<a href="https://sitfiscal.portaldasfinancas.gov.pt/flexibiliza/adesao/criarAdesao">
+<h3>PAGAMENTOS</h3>
+</a><a href="https://sitfiscal.portaldasfinancas.gov.pt/flexibiliza/adesao/criarAdesao">
+<h4>COVID-19: Flexibilização de pagamentos</h4>
+</a>
+<p>
+				<br><br><br>
+				Pagamento em prestações de IVA, bem como de retenções na fonte de IRS e IRC.<br><br>
+				<br><br><br>
+				</p>
+<a href="https://sitfiscal.portaldasfinancas.gov.pt/flexibiliza/adesao/criarAdesao" class="btn-primary">Aceder</a>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="col-xs-12-no-pad text-center">
+<a href="http://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/COVID_19/Paginas/default.aspx"><img style="height: 150px;" src="assets/images/estamoson_logo.png" alt="Para evitar o contágio do Covid 19, os Serviços do Estado continuam, agora mai online."></a>
+</div>
+</div><div class="col-xs-12">
+<hr>
+</div><div class="bottom clearfix">
+<div class="col-xs-12 no-pad margin-bottom-l m-b-3">
+<ul class="clearfix">
+<li>
+<div class="col-xs-12 col-sm-4">
+<a href="https://sitfiscal.portaldasfinancas.gov.pt/geral/home?areaDestino=TR" class="item-secondary">
+<h4>Finanças</h4>
+<h5>Aceda aos Serviços Tributários</h5>
+<span class="icon-arrow-right"></span></a>
+</div>
+</li>
+<li>
+<div class="col-xs-12 col-sm-4">
+<a href="https://sitfiscal.portaldasfinancas.gov.pt/geral/home?areaDestino=AD" class="item-secondary">
+<h4>Alfândegas</h4>
+<h5>Aceda aos Serviços Aduaneiros</h5>
+<span class="icon-arrow-right"></span></a>
+</div>
+</li>
+<li>
+<div class="col-xs-12 col-sm-4">
+<a href="http://info.portaldasfinancas.gov.pt/pt/Pages/homepage.aspx" class="item-secondary">
+<h4>Destaques e Atualidades</h4>
+<h5>Aceder às publicações mais recentes</h5>
+<span class="icon-arrow-right"></span></a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+				</div>
+			</main>
+			<!-- END MAIN -->
+		</div>
+		<!-- MAIN FOOTER -->
+		<footer role="contentinfo" class="main-footer">
+			<div class="container-wrapper">
+			
+				<div class="col-xs-12">
+				
+					<div class="col-xs-12 col-sm-3 no-pad">
+						<a class="moss" href="https://m1ss.portaldasfinancas.gov.pt" target="_blank" alt="Mini One Stop Shop/Mini Balcão Único" title="Mini One Stop Shop/Mini Balcão Único">
+							<img src="assets/images/moss_logo.png" width="147px" alt="Mini One Stop Shop/Mini Balcão Único" title="Mini One Stop Shop/Mini Balcão Único">
+						</a>
+					</div>
+					
+					<div class="hidden-xs col-sm-3 no-pad">
+						<a class="w3c" href="http://www.w3.org/WAI/WCAG1AA-Conformance" target="_blank">
+							<img src="assets/images/w3c.png" alt="Acessibilidade" title="Acessibilidade" height="31" width="88">
+						</a>
+					</div>
+					
+					<div class="col-xs-12 col-sm-6 no-pad">
+						<ul class="clearfix">
+							<li>
+								<a href="https://info.portaldasfinancas.gov.pt/pt/direitos_dos_contribuintes/Paginas/default.aspx" target="_blank" alt="Direitos dos Contribuintes" title="Direitos dos Contribuintes">
+									<!--[if gte IE 9]><!-->
+									<img src="assets/images/logo_defesa_38.png" alt="Direitos dos Contribuintes" title="Direitos dos Contribuintes">
+									<!--<![endif]-->
+									<!--[if lt IE 9]>
+									<img src="assets/images/logo_defesa_38.png" alt="Direitos dos Contribuintes" title="Direitos dos Contribuintes"/>
+									<![endif]-->
+								</a>
+							</li>
+							<li class="hidden-xs">
+								<a href="https://twitter.com/Aut_Trib_Adua" target="_blank" alt="Siga-nos no Twitter" title="Siga-nos no Twitter">
+									<i class="icon-twitter"></i>
+								</a>
+							</li>
+							<li class="hidden-xs">
+								<a href="http://info.portaldasfinancas.gov.pt/pt/dgci/dgci_youtube/" target="_blank" alt="Subscreva o nosso canal no Youtube" title="Subscreva o nosso canal no Youtube">
+									<i class="icon-play"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.portaldasfinancas.gov.pt/pt/contactosEbalcao.action" target="_blank" title="Contacte-nos pelo e-balcão">
+									<!--[if gte IE 9]><!-->
+									<img src="assets/images/logotipo_Contacte_nos_h38_2.png" alt="Contacte-nos pelo e-balcão" title="Contacte-nos pelo e-balcão">
+									<!--<![endif]-->
+									<!--[if lt IE 9]>
+									<img src="assets/images/logotipo_Contacte_nos_h3_2.png" alt="Contacte-nos pelo e-balcão" title="Contacte-nos pelo e-balcão"/>
+									<![endif]-->
+								</a>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+				
+			</div>
+		</footer>
+		<!-- END MAIN FOOTER -->
+
+		<!-- SCRIPTS -->
+		<script src="assets/js/lib/jquery-1.11.1.min.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>
+		    $(function() {
+	    	    var number = Math.floor((Math.random() * 4) + 1);
+	        	$("#imgLandingPage").addClass('header-secondary-background-' + number);
+		        $("#imgLandingPage").removeClass('hidden');
+		    });
+		</script>
+		<script>
+			function inputEmpty() {
+				var input = document.getElementById("query").value;
+				if (input != null && input.trim() == "") {
+					return false;
+				}
+			};
+		</script>
+   </body>
+  </html>
